@@ -1,6 +1,8 @@
 package vista;
 
 import java.awt.Color;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -18,5 +20,10 @@ public class PanelObjetos extends JPanel
         this.setLayout(null);
         Color colorRosa=new Color(253, 249, 202);
         this.setBackground(colorRosa);
+    }
+    public void agregarOyentesBotones(ActionListener pAL)
+    {
+        btcalib.addActionListener(pAL);
+
     }
 }

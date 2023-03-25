@@ -8,6 +8,7 @@ public class VentanaPrincipal extends JFrame
     // atributos 
     public PanelObjetos miPanelObjetos;
     public Color ColorRosa;
+    public VenCalibrador miCalibrador;
 
     // metodos 
 
@@ -31,5 +32,6 @@ public class VentanaPrincipal extends JFrame
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
 
+        
     }
 }
