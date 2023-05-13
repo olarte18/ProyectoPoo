@@ -12,6 +12,8 @@ public class PanelDatos extends JPanel
 {
     private Label lblab ;
     private JComboBox cbi ;
+    private Label lblab3 ;
+    private JComboBox cbi2 ;
     Color customColor = new Color(255, 255, 224);
 
     public PanelDatos()
@@ -19,10 +21,16 @@ public class PanelDatos extends JPanel
     this.setLayout(null);
     this.setBackground(customColor);
         //label
-    lblab = new Label("Seleccione un Laboratorio: ",Label.RIGHT);
+    lblab = new Label("SELECCIONA EL LABORATORIO  ");
     lblab.setFont(new Font("Arial",Font.BOLD,15));
     lblab.setForeground(new Color(47,79,79));
-    lblab.setBounds(20,175,240,20);
+    lblab.setBounds(120,45,250,20);
+    this.add(lblab);
+
+    lblab = new Label("LABORATORIO: ");
+    lblab.setFont(new Font("Arial",Font.BOLD,15));
+    lblab.setForeground(new Color(47,79,79));
+    lblab.setBounds(40,105,120,20);
     this.add(lblab);
         //lista
     cbi= new JComboBox();
@@ -30,7 +38,32 @@ public class PanelDatos extends JPanel
     cbi.addItem("i18(1/2) (medicion de objetos)");
     cbi.addItem("i18(2/2) (medicion de objetos)");
     cbi.addItem("i19 (MRU)");
-    cbi.setBounds(260,175,240,20);
+    cbi.setBounds(180,105,250,20);
     this.add(cbi);
+
+
+    lblab3 = new Label("¿Que Deseas Consultar?: ");
+    lblab3.setFont(new Font("Arial",Font.BOLD,15));
+    lblab3.setForeground(new Color(47,79,79));
+    lblab3.setBounds(40,175,200,20);
+    this.add(lblab3);
+        //lista
+    cbi2= new JComboBox();
+
+    cbi2.addItem("¿Como Hacerlo?");
+    cbi2.addItem("Materiales");
+    cbi2.addItem("Ver un Video de prueba");
+    cbi2.setBounds(240,175,250,20);
+    this.add(cbi2);
+    }
+
+    public String getLaboratorio()
+    {
+        return (String) cbi.getSelectedItem();
+    }
+
+    public void setLaboratorio(String emp)
+    {
+        cbi.addItem(emp);
     }
 }
