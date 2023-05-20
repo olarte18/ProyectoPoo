@@ -17,7 +17,7 @@ public class Controlador implements ActionListener
     //Atributos
     //------------------
     private VentanaPrincipal venPrin;
-   
+    private Laboratorio lab;
     
     
 
@@ -26,10 +26,10 @@ public class Controlador implements ActionListener
     //------------------
 
     //Constructor
-    public Controlador(VentanaPrincipal pVenPrin)
+    public Controlador(VentanaPrincipal pVenPrin, Laboratorio pLab)
     {
         this.venPrin = pVenPrin;
-    
+        this.lab=pLab;
         
         this.venPrin.miPanelOperaciones.agregarOyentesBotones(this);
         
@@ -42,10 +42,18 @@ public class Controlador implements ActionListener
 
         //Abrir ventana Agregar vendedor
   
-   if(comando.equals("lab")){
-    String laboratorio=venPrin.miPanelDatos.getLaboratorio();
-    Laboratorio lab = new Laboratorio(laboratorio);
-    lab.calcularCombox();
+   if(comando.equals("ver")){
+    int indx1=venPrin.miPanelDatos.getLaboratorio();
+    int indx2=venPrin.miPanelDatos.getFuncion();
+    switch(indx1)
+    {case 0:
+        switch(indx2)
+        {
+            case 0:
+            venPrin.crearDialogoLaboratorio();
+
+        }
+    }
 
    }
 

@@ -57,13 +57,21 @@ public class PanelDatos extends JPanel
     this.add(cbi2);
     }
 
-    public String getLaboratorio()
+    public int getLaboratorio()
     {
-        return (String) cbi.getSelectedItem();
+        return (int) cbi.getSelectedIndex();
     }
 
     public void setLaboratorio(String emp)
     {
         cbi.addItem(emp);
+    }
+    public int getFuncion()
+    {
+        return (int ) cbi2.getSelectedIndex();
+    }
+    public void setFuncion(String emp)
+    {
+        cbi2.addItem(emp);
     }
 }

@@ -7,8 +7,9 @@ public class VentanaPrincipal extends JFrame
 {
     // atributos 
     public PanelDatos miPanelDatos;
-    public Color ColorRosa;
     public PanelOperaciones miPanelOperaciones;
+    public DialogoLaboratorio miDialogoLaboratorio=null ;
+
 
     // metodos 
 
@@ -38,5 +39,9 @@ public class VentanaPrincipal extends JFrame
         this.setVisible(true);
 
         
+    }
+    public void crearDialogoLaboratorio()
+    {
+        miDialogoLaboratorio = new DialogoLaboratorio();
     }
 }

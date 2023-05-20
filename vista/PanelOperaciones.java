@@ -13,7 +13,7 @@ public class PanelOperaciones extends JPanel
     // Atributos
     //----------------------
     private JButton btBorrar;
-    private JButton btCostoPlan;
+    private JButton btVer;
     private JButton btSalir;
 
 
@@ -30,10 +30,10 @@ public class PanelOperaciones extends JPanel
         this.setBackground(customColor);
 
         //Crear y agregar boton AgregarVendedor
-        btCostoPlan = new JButton("Ver laboratorio");
-        btCostoPlan.setBounds(80,50,200,40);
-        btCostoPlan.setActionCommand("lab");
-        this.add(btCostoPlan);
+        btVer = new JButton("Ver laboratorio");
+        btVer.setBounds(80,50,200,40);
+        btVer.setActionCommand("ver");
+        this.add(btVer);
 
     
      
@@ -59,7 +59,7 @@ public class PanelOperaciones extends JPanel
     public void agregarOyentesBotones(ActionListener pAL)
     {
         
-        btCostoPlan.addActionListener(pAL);
+        btVer.addActionListener(pAL);
         btSalir.addActionListener(pAL);
      
     }
