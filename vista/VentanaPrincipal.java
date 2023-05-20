@@ -8,7 +8,8 @@ public class VentanaPrincipal extends JFrame
     // atributos 
     public PanelDatos miPanelDatos;
     public PanelOperaciones miPanelOperaciones;
-    public DialogoLaboratorio miDialogoLaboratorio=null ;
+    public DialogoLaboratorio miDialogoLaboratorio ;
+
 
 
     // metodos 
@@ -42,6 +43,6 @@ public class VentanaPrincipal extends JFrame
     }
     public void crearDialogoLaboratorio()
     {
-        miDialogoLaboratorio = new DialogoLaboratorio();
+        miDialogoLaboratorio = new DialogoLaboratorio(this);
     }
 }

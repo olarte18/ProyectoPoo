@@ -12,6 +12,5 @@ public class Test
         VentanaPrincipal miVentana = new VentanaPrincipal();
         Laboratorio miLaboratorio= new Laboratorio();
         Controlador miControlador = new Controlador(miVentana, miLaboratorio);
-        
     }
 }

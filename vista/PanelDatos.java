@@ -34,7 +34,7 @@ public class PanelDatos extends JPanel
     this.add(lblab);
         //lista
     cbi= new JComboBox();
-    cbi.addItem("12 ");
+    cbi.addItem(" ");
     cbi.addItem("i18(1/2) (medicion de objetos)");
     cbi.addItem("i18(2/2) (medicion de objetos)");
     cbi.addItem("i19 (MRU)");
@@ -49,7 +49,7 @@ public class PanelDatos extends JPanel
     this.add(lblab3);
         //lista
     cbi2= new JComboBox();
-
+    cbi2.addItem(" ");
     cbi2.addItem("¿Como Hacerlo?");
     cbi2.addItem("Materiales");
     cbi2.addItem("Ver un Video de prueba");
