@@ -43,8 +43,8 @@ public class Controlador implements ActionListener
         //Abrir ventana Agregar vendedor
   
    if(comando.equals("ver")){
-    int indx1=venPrin.miPanelDatos.getLaboratorio();
-    int indx2=venPrin.miPanelDatos.getFuncion();
+    int indx1=venPrin.miPanelDatos.getLaboratorioid();
+    int indx2=venPrin.miPanelDatos.getFuncionid();
     switch(indx1)
     {case 0:
         switch(indx2)

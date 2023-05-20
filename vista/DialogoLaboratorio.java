@@ -1,24 +1,26 @@
 package vista;
 
 import java.awt.Color;
+import java.lang.invoke.StringConcatFactory;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import vista.VentanaPrincipal;
+import modelo.Laboratorio;
 
 public class DialogoLaboratorio extends JDialog {
     
     //----------------------
     // Atributos
     //----------------------
-    private JLabel lbCapacidad;
+    private JLabel lbLab;
     private JTextField tfCapacidad;
     private JLabel lbHoras;
     private JTextField tfHoras;
-
-    private JButton btAgregarSalon;
-
+    private VentanaPrincipal venPrin;
+    private JButton btAgregarSalon; 
     //----------------------
     // Metodos
     //----------------------
@@ -26,11 +28,12 @@ public class DialogoLaboratorio extends JDialog {
     {
         //Definición del layout del Dialogo
         this.setLayout(null);
-
+        String hola =venPrin.miPanelDatos.getLaboratorioit();
         //Crear y agregar elementos
-        lbCapacidad= new JLabel("Capacidad: ");
-        lbCapacidad.setBounds(10,30,140,20);
-        this.add(lbCapacidad);
+        lbLab= new JLabel();
+        lbLab.setText(hola);
+        lbLab.setBounds(10,30,140,20);
+        this.add(lbLab);
 
         tfCapacidad = new JTextField();
         tfCapacidad.setBounds(100,30,150, 25);

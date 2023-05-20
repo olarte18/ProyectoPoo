@@ -34,7 +34,7 @@ public class PanelDatos extends JPanel
     this.add(lblab);
         //lista
     cbi= new JComboBox();
-    cbi.addItem(" ");
+    cbi.addItem("12 ");
     cbi.addItem("i18(1/2) (medicion de objetos)");
     cbi.addItem("i18(2/2) (medicion de objetos)");
     cbi.addItem("i19 (MRU)");
@@ -56,21 +56,25 @@ public class PanelDatos extends JPanel
     cbi2.setBounds(240,175,250,20);
     this.add(cbi2);
     }
-
-    public int getLaboratorio()
+    public String getLaboratorioit()
+    {
+        return (String) cbi.getSelectedItem();
+    }
+    public int getLaboratorioid()
     {
         return (int) cbi.getSelectedIndex();
     }
 
-    public void setLaboratorio(String emp)
+    public void setLaboratorioid(String emp )
     {
         cbi.addItem(emp);
     }
-    public int getFuncion()
+
+    public int getFuncionid()
     {
         return (int ) cbi2.getSelectedIndex();
     }
-    public void setFuncion(String emp)
+    public void setFuncionid(String emp)
     {
         cbi2.addItem(emp);
     }
