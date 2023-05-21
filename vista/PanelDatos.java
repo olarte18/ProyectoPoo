@@ -3,35 +3,33 @@ package vista;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Label;
-import java.awt.TextField;
-
 import javax.swing.JComboBox;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelDatos extends JPanel
 {
-    private Label lblab ;
-    private JComboBox cbi ;
+    private Label lblab1, lblab;
+    private JComboBox cbi,cbi2 ;
     private Label lblab3 ;
-    private JComboBox cbi2 ;
-    Color customColor = new Color(255, 255, 224);
+    public Color customColor = new Color(255, 255, 224);
 
     public PanelDatos()
     {
     this.setLayout(null);
     this.setBackground(customColor);
         //label
-    lblab = new Label("SELECCIONA EL LABORATORIO  ");
-    lblab.setFont(new Font("Arial",Font.BOLD,15));
+    lblab = new Label("Seleccione el Laboratorio", JLabel.CENTER);
+    lblab.setBounds(200,45,800,20);
+    lblab.setFont(new Font("times",Font.BOLD,20));
     lblab.setForeground(new Color(47,79,79));
-    lblab.setBounds(120,45,250,20);
     this.add(lblab);
 
-    lblab = new Label("LABORATORIO: ");
-    lblab.setFont(new Font("Arial",Font.BOLD,15));
-    lblab.setForeground(new Color(47,79,79));
-    lblab.setBounds(40,105,120,20);
-    this.add(lblab);
+    lblab1 = new Label("LABORATORIO: ");
+    lblab1.setFont(new Font("times",Font.BOLD,15));
+    lblab1.setForeground(new Color(47,79,79));
+    lblab1.setBounds(40,105,122,20);
+    this.add(lblab1);
         //lista
     cbi= new JComboBox();
     cbi.addItem(" ");
@@ -43,7 +41,7 @@ public class PanelDatos extends JPanel
 
 
     lblab3 = new Label("¿Que Deseas Consultar?: ");
-    lblab3.setFont(new Font("Arial",Font.BOLD,15));
+    lblab3.setFont(new Font("times",Font.BOLD,15));
     lblab3.setForeground(new Color(47,79,79));
     lblab3.setBounds(40,175,200,20);
     this.add(lblab3);
