@@ -48,6 +48,7 @@ public class Controlador implements ActionListener
     switch(indx1)
     {case 0:
         JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
+        break;
     case 1:
         switch(indx2)
         {case 0:
@@ -58,6 +59,26 @@ public class Controlador implements ActionListener
             break;
         case 2:
             venPrin.crearDialogoLaboratorio();
+            break;
+        case 3:
+            venPrin.crearDialogoLaboratorio();
+            break;
+        }
+        break;
+    case 2:
+        switch(indx2)
+        {case 0:
+            JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
+            break;
+        case 1:
+            venPrin.crearDialogoLaboratorio();
+            break;
+        case 2:
+            venPrin.crearDialogoLaboratorio();
+            break;
+        case 3:
+            venPrin.crearDialogoLaboratorio();
+            break;
         }
     }
     

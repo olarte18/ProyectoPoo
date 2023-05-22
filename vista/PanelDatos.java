@@ -33,9 +33,14 @@ public class PanelDatos extends JPanel
         //lista
     cbi= new JComboBox();
     cbi.addItem(" ");
+    cbi.addItem("i2 (Mesa de Fuerzas)");
     cbi.addItem("i18(1/2) (medicion de objetos)");
-    cbi.addItem("i18(2/2) (medicion de objetos)");
-    cbi.addItem("i19 (MRU)");
+    cbi.addItem("i19 (Ecuaciones Empiricas)");
+    cbi.addItem("i20 (MUR)");
+    cbi.addItem("i22 (Ley de Hooke)");
+
+
+
     cbi.setBounds(180,105,250,20);
     this.add(cbi);
 
