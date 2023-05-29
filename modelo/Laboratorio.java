@@ -26,11 +26,5 @@ public String getLaboratorio() {
 
 public void setLaboratorio(String laboratorio) {
     this.laboratorio = laboratorio;
-} 
-
-
-public void calcularCombox(){
-    
-}
-    
+}  
 }

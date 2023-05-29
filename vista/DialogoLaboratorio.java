@@ -3,6 +3,7 @@ package vista;
 import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -14,7 +15,7 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     // Atributos
     //----------------------
-    private JLabel lbLab;
+    private JLabel lbLab, lb1Lab,lb2Lab;
     private VentanaPrincipal venPrin ;
  
     //----------------------
@@ -24,6 +25,7 @@ public class DialogoLaboratorio extends JDialog {
 
     public DialogoLaboratorio(VentanaPrincipal ventanaPrincipal)
     {
+        String imagen="/vista/imagen.png";
         venPrin=ventanaPrincipal;
         //Definición del layout del Dialogo
         this.setLayout(null);
@@ -37,8 +39,13 @@ public class DialogoLaboratorio extends JDialog {
         lbLab.setForeground(new Color(47,79,79));
 
         this.add(lbLab);
+        lb1Lab= new JLabel();
+        lb1Lab.setBounds(100,80,200,267);
+        this.add(lb1Lab);
 
-
+        lb2Lab= new JLabel();
+        lb2Lab.setBounds(350,80,200,267);
+        this.add(lb2Lab);
         //Caracteristicas de la ventana
         this.setTitle("Laboratorio");
         this.setSize(800,600);
@@ -46,6 +53,12 @@ public class DialogoLaboratorio extends JDialog {
         this.setResizable(false);
         this.setVisible(true);
     }
-    
+    public void setIcono(ImageIcon icono) {
+        lb1Lab.setIcon(icono);
+    }
+    public void setIcono1(ImageIcon icono1) {
+        lb2Lab.setIcon(icono1);
+    }
+
 }
 
