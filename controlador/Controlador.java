@@ -47,6 +47,9 @@ public class Controlador implements ActionListener
    if(comando.equals("ver")){
     int indx1=venPrin.miPanelDatos.getLaboratorioid();
     int indx2=venPrin.miPanelDatos.getFuncionid();
+    Laboratorio lab=new Laboratorio();
+    lab.setFuncion("Funcion: "+venPrin.miPanelDatos.getFuncionit());
+    lab.setLaboratorio("Laboratorio: "+venPrin.miPanelDatos.getLaboratorioit());
     switch(indx1)
     {case 0:
         JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
@@ -57,6 +60,7 @@ public class Controlador implements ActionListener
             JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
             break;
         case 1:
+
             venPrin.crearDialogoLaboratorio();
             break;
         case 2:

@@ -77,6 +77,10 @@ public class PanelDatos extends JPanel
     {
         return (int ) cbi2.getSelectedIndex();
     }
+    public int getFuncionit()
+    {
+        return (int ) cbi2.getSelectedItem();
+    }
     public void setFuncionid(String emp)
     {
         cbi2.addItem(emp);

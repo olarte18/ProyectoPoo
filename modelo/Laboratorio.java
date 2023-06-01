@@ -1,13 +1,16 @@
 package modelo;
 
+import vista.VentanaPrincipal;
+
 public class Laboratorio {
 
 private String laboratorio;
 private String funcion;
 
 
-public Laboratorio(String pLaboratorio){
+public Laboratorio(String pLaboratorio, String pFuncion){
     laboratorio=pLaboratorio;
+    funcion=pFuncion;
 }
 public Laboratorio()
 {}
