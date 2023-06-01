@@ -7,6 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+
+import modelo.Laboratorio;
 import vista.VentanaPrincipal;
 
 public class DialogoLaboratorio extends JDialog {
@@ -16,12 +18,14 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     private JLabel lbLab, lb1Lab,lb2Lab;
     private VentanaPrincipal venPrin ;
- 
+    private Laboratorio lab;
     //----------------------
     // Metodos
     //----------------------
     Color customColor = new Color(255, 255, 224);
-
+    lab=new Laboratorio();
+    lab.setFuncion(venPrin.miPanelDatos.getFuncionid());
+    lab.setLaboratorio(venPrin.miPanelDatos.getLaboratorioit());
     public DialogoLaboratorio(VentanaPrincipal ventanaPrincipal)
     {
         String imagen="/vista/imagen.png";
@@ -32,7 +36,7 @@ public class DialogoLaboratorio extends JDialog {
         getContentPane().setBackground(customColor);
 
         //Crear y agregar elementos
-        lbLab= new JLabel("Laboratorio "+venPrin.miPanelDatos.getLaboratorioit(), JLabel.CENTER);
+        lbLab= new JLabel(lab.getLaboratorio());
         lbLab.setBounds(10,30,800,30);
         lbLab.setFont(new Font("times",Font.BOLD,24));
         lbLab.setForeground(new Color(47,79,79));
