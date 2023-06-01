@@ -18,16 +18,17 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     private JLabel lbLab, lb1Lab,lb2Lab;
     private VentanaPrincipal venPrin ;
-    private Laboratorio lab;
     //----------------------
     // Metodos
     //----------------------
     Color customColor = new Color(255, 255, 224);
-    lab=new Laboratorio();
-    lab.setFuncion(venPrin.miPanelDatos.getFuncionid());
-    lab.setLaboratorio(venPrin.miPanelDatos.getLaboratorioit());
+
     public DialogoLaboratorio(VentanaPrincipal ventanaPrincipal)
     {
+        venPrin = ventanaPrincipal;
+        Laboratorio lab=new Laboratorio();
+        lab.setFuncion(venPrin.miPanelDatos.getFuncionit());
+        lab.setLaboratorio(venPrin.miPanelDatos.getLaboratorioit());
         String imagen="/vista/imagen.png";
         venPrin=ventanaPrincipal;
         //Definición del layout del Dialogo
