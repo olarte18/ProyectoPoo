@@ -48,7 +48,7 @@ public class DialogoLaboratorio extends JDialog {
         this.add(lb1Lab);
 
         lb2Lab= new JLabel();
-        lb2Lab.setBounds(350,80,200,267);
+        lb2Lab.setBounds(50,80,200,20);
         this.add(lb2Lab);
         //Caracteristicas de la ventana
         this.setTitle("Laboratorio");

@@ -20,14 +20,13 @@ public class PanelOperaciones extends JPanel
     //----------------------
     // Metodos
     //----------------------
-    Color customColor = new Color(255, 255, 224);
-
+    
     //Constructor
     public PanelOperaciones()
     {
         //Definición del contenedor del panel
         this.setLayout(null);
-        this.setBackground(customColor);
+        this.setBackground(Color.black);
 
         //Crear y agregar boton AgregarVendedor
         btVer = new JButton("Ver laboratorio");

@@ -3,6 +3,9 @@ package vista;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Label;
+
+
+import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -12,17 +15,19 @@ public class PanelDatos extends JPanel
     private Label lblab1, lblab;
     private JComboBox cbi,cbi2 ;
     private Label lblab3 ;
+    private JLabel lbImagen;
+    private ImageIcon iImagen;
     public Color customColor = new Color(255, 255, 224);
 
     public PanelDatos()
     {
     this.setLayout(null);
-    this.setBackground(customColor);
+   
         //label
     lblab = new Label("Seleccione el Laboratorio", JLabel.CENTER);
-    lblab.setBounds(200,45,800,20);
+    lblab.setBounds(250,45,250,20);
+    
     lblab.setFont(new Font("times",Font.BOLD,20));
-    lblab.setForeground(new Color(47,79,79));
     this.add(lblab);
 
     lblab1 = new Label("LABORATORIO: ");
@@ -56,8 +61,14 @@ public class PanelDatos extends JPanel
     cbi2.addItem("¿Como Hacerlo?");
     cbi2.addItem("Materiales");
     cbi2.addItem("Ver un Video de prueba");
-    cbi2.setBounds(240,175,250,20);
+    cbi2.setBounds(250,175,250,20);
     this.add(cbi2);
+
+    iImagen = new ImageIcon(getClass().getResource("/vista/Diseño.png"));
+    lbImagen = new JLabel(iImagen);
+    lbImagen.setBounds(0,0,800,280);
+    this.add(lbImagen);
+
     }
     public String getLaboratorioit()
     {
