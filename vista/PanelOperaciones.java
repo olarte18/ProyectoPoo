@@ -20,22 +20,22 @@ public class PanelOperaciones extends JPanel
     //----------------------
     // Metodos
     //----------------------
+    // creaccion color base
+    Color customColor = new Color(255, 255, 255);
     
     //Constructor
     public PanelOperaciones()
     {
+
         //Definición del contenedor del panel
         this.setLayout(null);
-        this.setBackground(Color.black);
+        this.setBackground(customColor);
 
-        //Crear y agregar boton AgregarVendedor
+        //Crear y agregar boton verlaboratorio
         btVer = new JButton("Ver laboratorio");
         btVer.setBounds(80,50,200,40);
         btVer.setActionCommand("ver");
         this.add(btVer);
-
-    
-     
 
         //Crear y agregar boton Salir
         btSalir = new JButton("Salir");
@@ -43,16 +43,6 @@ public class PanelOperaciones extends JPanel
         btSalir.setActionCommand("salir");
         this.add(btSalir);
 
-
-
-       //Borde y titulo del panel
-       TitledBorder borde = BorderFactory.createTitledBorder("  ");
-       borde.setTitleColor(Color.black);
-       this.setBorder(borde);
-
-
-
-   
     }
 
     public void agregarOyentesBotones(ActionListener pAL)

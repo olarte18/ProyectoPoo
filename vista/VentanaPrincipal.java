@@ -10,10 +10,6 @@ public class VentanaPrincipal extends JFrame
     public PanelOperaciones miPanelOperaciones;
     public DialogoLaboratorio miDialogoLaboratorio ;
 
-
-
-    // metodos 
-
     // metodo constructor 
 
     public VentanaPrincipal ()
@@ -24,12 +20,12 @@ public class VentanaPrincipal extends JFrame
         this.setBackground(Color.black);
         //cracion frame PanelStart
         miPanelDatos= new PanelDatos();
-        miPanelDatos.setBounds(0,0,810,280);
+        miPanelDatos.setBounds(0,0,820,280);
         this.add(miPanelDatos);
 
         //Creación y adición del PanelOperaciones
         miPanelOperaciones = new PanelOperaciones();
-        miPanelOperaciones.setBounds(5,290,800,140);
+        miPanelOperaciones.setBounds(0,280,820,155);
         this.add(miPanelOperaciones);
         // caracteristicas de la ventana 
         this.setTitle("LABSIS" );
@@ -41,6 +37,7 @@ public class VentanaPrincipal extends JFrame
 
         
     }
+    // metodos
     public void crearDialogoLaboratorio()
     {
         miDialogoLaboratorio = new DialogoLaboratorio(this);

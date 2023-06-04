@@ -57,8 +57,10 @@ public class Controlador implements ActionListener
             JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
             break;
         case 1:
-
+            ImageIcon icono2 =new ImageIcon("imgs/Mesadefuerzas.png");
+            
             venPrin.crearDialogoLaboratorio();
+            venPrin.miDialogoLaboratorio.setIcono2(icono2);
             break;
         case 2:
   
@@ -77,7 +79,9 @@ public class Controlador implements ActionListener
             JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
             break;
         case 1:
+            ImageIcon icono2 =new ImageIcon("imgs/i182.png");
             venPrin.crearDialogoLaboratorio();
+            venPrin.miDialogoLaboratorio.setIcono2(icono2);
             break;
         case 2:
             venPrin.crearDialogoLaboratorio();
@@ -86,13 +90,16 @@ public class Controlador implements ActionListener
             venPrin.crearDialogoLaboratorio();
             break;
         }
+        break;
     case 3:
     switch(indx2)
     {case 0:
         JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
         break;
     case 1:
+        ImageIcon icono2 =new ImageIcon("");
         venPrin.crearDialogoLaboratorio();
+        venPrin.miDialogoLaboratorio.setIcono2(icono2);
         break;
     case 2:
         venPrin.crearDialogoLaboratorio();
@@ -108,6 +115,9 @@ public class Controlador implements ActionListener
         JOptionPane.showMessageDialog(null, "No ha seleccionado ningun elemento" );
         break;
     case 1:
+        ImageIcon icono2 =new ImageIcon("imgs/i20.png");
+        venPrin.crearDialogoLaboratorio();
+        venPrin.miDialogoLaboratorio.setIcono2(icono2);
         venPrin.crearDialogoLaboratorio();
         break;
     case 2:
@@ -115,8 +125,9 @@ public class Controlador implements ActionListener
         break;
     case 3:
         venPrin.crearDialogoLaboratorio();
-
+        break;
     }
+    break;
     case 5:
     switch(indx2)
     {case 0:
@@ -129,6 +140,8 @@ public class Controlador implements ActionListener
     ImageIcon icono =new ImageIcon("imgs/base.jpeg");
     ImageIcon icono1 =new ImageIcon("imgs/pesos.jpeg");
 
+
+
         venPrin.crearDialogoLaboratorio();
         venPrin.miDialogoLaboratorio.setIcono(icono);
         venPrin.miDialogoLaboratorio.setIcono1(icono1);
@@ -136,7 +149,7 @@ public class Controlador implements ActionListener
 
     case 3:
         venPrin.crearDialogoLaboratorio();
-
+        break;  
     }
     
 

@@ -1,20 +1,19 @@
 package modelo;
 
-import vista.VentanaPrincipal;
-
 public class Laboratorio {
-
+//atributos
 private String laboratorio;
 private String funcion;
 
-
+//Constructor
 public Laboratorio(String pLaboratorio, String pFuncion){
     laboratorio=pLaboratorio;
     funcion=pFuncion;
 }
+//Constructor nulo
 public Laboratorio()
 {}
-
+//metodos
 public String getFuncion() {
     return funcion;
 }

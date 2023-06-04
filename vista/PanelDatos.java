@@ -6,6 +6,7 @@ import java.awt.Label;
 
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -43,10 +44,9 @@ public class PanelDatos extends JPanel
     cbi.addItem("i19 (Ecuaciones Empiricas)");
     cbi.addItem("i20 (MUR)");
     cbi.addItem("i22 (Ley de Hooke)");
-
-
-
     cbi.setBounds(180,105,250,20);
+
+        
     this.add(cbi);
 
 
@@ -64,7 +64,7 @@ public class PanelDatos extends JPanel
     cbi2.setBounds(250,175,250,20);
     this.add(cbi2);
 
-    iImagen = new ImageIcon(getClass().getResource("/vista/Diseño.png"));
+    iImagen = new ImageIcon(getClass().getResource("/imgs/diseño.png"));
     lbImagen = new JLabel(iImagen);
     lbImagen.setBounds(0,0,800,280);
     this.add(lbImagen);
