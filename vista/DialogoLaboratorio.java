@@ -2,7 +2,10 @@ package vista;
 //importar clases necesarias
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import modelo.Laboratorio;
@@ -13,39 +16,36 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     // Atributos
     //----------------------
-    private JLabel lbLab, lb1Lab,lb2Lab,lbprincipal;
+    private JLabel lbLab, lbprincipal;
     private VentanaPrincipal venPrin ;
+    private JButton btVolver;
 
-    // contructor
+    // constructor
     public DialogoLaboratorio(VentanaPrincipal ventanaPrincipal)
     {
+
         venPrin = ventanaPrincipal;
+        //crear el objeto laboratorio
         Laboratorio lab=new Laboratorio();
+        //asignar los valores de los atributos del objeto laboratorio
         lab.setFuncion(venPrin.miPanelDatos.getFuncionit());
         lab.setLaboratorio(venPrin.miPanelDatos.getLaboratorioit());
-        venPrin=ventanaPrincipal;
         //Definición del layout del Dialogo
         this.setLayout(null);
         //Crear y agregar elementos
         lbLab= new JLabel(lab.getLaboratorio());
-        lbLab.setBounds(10,30,800,30);
+        lbLab.setBounds(10,40,800,30);
         lbLab.setFont(new Font("times",Font.BOLD,24));
-        lbLab.setForeground(new Color(47,79,79));
-
+        lbLab.setForeground(new Color(184, 164, 158));
         this.add(lbLab);
-
+        //crear label y agregarlo al panel
         lbprincipal= new JLabel();
         lbprincipal.setBounds(0,0,800,570);
         this.add(lbprincipal);
+        //crear boton y agregarlo al panel
+
 
         
-        lb1Lab= new JLabel();
-        lb1Lab.setBounds(100,80,200,267);
-        this.add(lb1Lab);
-
-        lb2Lab= new JLabel();
-        lb2Lab.setBounds(350,80,200,267);
-        this.add(lb2Lab);
         //Caracteristicas de la ventana
         this.setTitle("Laboratorio");
         this.setSize(800,570);
@@ -56,15 +56,16 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     // Metodos
     //----------------------
-    public void setIcono(ImageIcon icono) {
-        lb1Lab.setIcon(icono);
+    //metodo boton volver
+    public void agregarOyentesBotones1(ActionListener pAL)
+    {
+        btVolver.addActionListener(pAL);
     }
-    public void setIcono1(ImageIcon icono1) {
-        lb2Lab.setIcon(icono1);
-    }
+    //metodos para asignar el icono
     public void setIcono2(ImageIcon icono2) {
         lbprincipal.setIcon(icono2);
     }
+
 
 }
 

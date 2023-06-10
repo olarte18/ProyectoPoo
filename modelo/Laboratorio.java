@@ -1,5 +1,6 @@
 package modelo;
 
+//clase Laboratorio
 public class Laboratorio {
 //atributos
 private String laboratorio;
@@ -13,7 +14,7 @@ public Laboratorio(String pLaboratorio, String pFuncion){
 //Constructor nulo
 public Laboratorio()
 {}
-//metodos
+//metodos get y set
 public String getFuncion() {
     return funcion;
 }

@@ -1,8 +1,9 @@
 package vista;
-
+// se importan las clases necesarias
 import java.awt.Color;
 import javax.swing.JFrame;
 
+//creacion ventana principal
 public class VentanaPrincipal extends JFrame
 {
     // atributos 
