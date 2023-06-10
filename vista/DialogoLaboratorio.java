@@ -1,16 +1,13 @@
 package vista;
-
+//importar clases necesarias
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
-
 import modelo.Laboratorio;
-import vista.VentanaPrincipal;
 
+//creacion de la clase DialogoLaboratorio
 public class DialogoLaboratorio extends JDialog {
     
     //----------------------
@@ -18,9 +15,7 @@ public class DialogoLaboratorio extends JDialog {
     //----------------------
     private JLabel lbLab, lb1Lab,lb2Lab,lbprincipal;
     private VentanaPrincipal venPrin ;
-    //----------------------
-    // Metodos
-    //----------------------
+
     // contructor
     public DialogoLaboratorio(VentanaPrincipal ventanaPrincipal)
     {
@@ -32,11 +27,6 @@ public class DialogoLaboratorio extends JDialog {
         //Definición del layout del Dialogo
         this.setLayout(null);
         //Crear y agregar elementos
- 
-
-
-
-
         lbLab= new JLabel(lab.getLaboratorio());
         lbLab.setBounds(10,30,800,30);
         lbLab.setFont(new Font("times",Font.BOLD,24));
