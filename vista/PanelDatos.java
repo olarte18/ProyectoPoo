@@ -65,7 +65,6 @@ public class PanelDatos extends JPanel
         cbi2.addItem(" ");
         cbi2.addItem("¿Como Hacerlo?");
         cbi2.addItem("Materiales");
-        cbi2.addItem("Ver un Video de prueba");
         cbi2.setBounds(250,175,250,20);
         cbi2.setBackground(customColor);
 
