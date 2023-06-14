@@ -34,9 +34,9 @@ public class DialogoLaboratorio extends JDialog {
         this.setLayout(null);
         //Crear y agregar elementos
         lbLab= new JLabel(lab.getLaboratorio());
-        lbLab.setBounds(10,40,800,30);
-        lbLab.setFont(new Font("times",Font.BOLD,24));
-        lbLab.setForeground(new Color(184, 164, 158));
+        lbLab.setBounds(465,490,800,30);
+        lbLab.setFont(new Font("times",Font.BOLD,20));
+        lbLab.setForeground(Color.black);
         this.add(lbLab);
         //crear label y agregarlo al panel
         lbprincipal= new JLabel();
